@@ -14,3 +14,7 @@ This project does:
 1. `python3 create_simple_map.py` 
 2. `python3 create_simple_map_with_marker.py`
 3. `Browse to all the html in the folder`
+
+### Demo
+
+![alt tag](https://raw.githubusercontent.com/ultralabed/python3-folium-open-street-map/master/assets/map_with_map_data_and_marker.png)
