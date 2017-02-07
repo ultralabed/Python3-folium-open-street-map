@@ -17,6 +17,6 @@ def color(elev):
     return col
 
 for lat, lon, name, elev in zip(df['LAT'], df['LON'], df['NAME'], df['ELEV']):
-    map.simple_marker(location=[lat, lon], popup=name, marker_color=color(elev))
+    map.add_children(folium.Marker(location=[lat, lon], popup=name, icon=folium.Icon(color=color(elev), icon_color='green')))
 
-map.create_map(path='usa_volcanoes_map.html')
+map.save(outfile='usa_volcanoes_map.html')
